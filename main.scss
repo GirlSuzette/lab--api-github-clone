@@ -1,34 +1,64 @@
+$colorRoyalBlue: #2E52DC;
+$colorWhite:#ffffff;
+$colorCatskillWhite:#EBF0F6;
+$colorGallery: #EFEFEF;
+$colorBlack: #000000;
+$colorSilver: #CCCCCC;
+
 * {
     box-sizing: content-box;
 }
 
 a {
     text-decoration: none;
-    color: #6379d2;
+    color: $colorRoyalBlue;
 }
 
 body {
-    width: 75%;
+    width: 95%;
     margin: 10px auto;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .containerFull {
-    display: flex
+    display: flex;
 }
 
-.fa {
+.icons .fa {
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 5px;
+    color: $colorWhite;
+}
+
+.icons li {
+    display: inline-block;
+}
+
+.icons {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    width: 35%;
+    text-align: right;
+}
+
+.icons .fa-bell:before,
+.icons .fa-plus:before,
+.icons .fa-caret-down:before {
+    vertical-align: super;
+}
+
+.fa-img {
+    border-radius: 10px;
+    width: 32px;
 }
 
 .navegation {
     display: flex;
-    flex-direction: row;
     height: 60px;
     align-items: center;
     border: 1px solid rgb(204, 204, 204);
-    background-color: #ebf0f6;
+    background-color: $colorBlack;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     padding-left: 10px;
@@ -36,6 +66,7 @@ body {
     &__faGit {
         padding: 20px;
         font-size: 50px;
+        color: $colorWhite;
     }
 
     &__search {
@@ -43,7 +74,12 @@ body {
         height: 34px;
         font-size: 15px;
         padding-left: 12px;
-        color: #ebf0f6;
+        color: $colorCatskillWhite;
+        background: none;
+        display: table-cell;
+        min-height: 26px;
+        padding-bottom: 0;
+        padding-top: 0;
     }
 
     &__menuMain {
@@ -53,6 +89,7 @@ body {
             list-style: none;
             margin: 10px;
             display: inline;
+            color: $colorWhite;
         }
     }
 
@@ -74,9 +111,9 @@ body {
 
     &__button {
         width: 170px;
-        background: linear-gradient(#ffffff, #efefef);
+        background: linear-gradient($colorWhite, $colorGallery);
         font-weight: 700;
-        color: #000;
+        color: $colorBlack;
         padding: 10px;
     }
 
@@ -113,7 +150,7 @@ body {
             display: flex;
             flex-direction: row;
             padding-bottom: 20px;
-            border-bottom: 1px solid #cccccc;
+            border-bottom: 1px solid $colorSilver;
         }
 
         &__language {

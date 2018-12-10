@@ -4,11 +4,11 @@
 
 a {
   text-decoration: none;
-  color: #6379d2;
+  color: #2E52DC;
 }
 
 body {
-  width: 75%;
+  width: 95%;
   margin: 10px auto;
   font-family: "Fira Sans", sans-serif;
 }
@@ -17,18 +17,41 @@ body {
   display: flex;
 }
 
-.fa {
+.icons .fa {
   font-size: 20px;
-  padding-right: 10px;
+  padding-right: 5px;
+  color: #ffffff;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+.icons {
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 35%;
+  text-align: right;
+}
+
+.icons .fa-bell:before,
+.icons .fa-plus:before,
+.icons .fa-caret-down:before {
+  vertical-align: super;
+}
+
+.fa-img {
+  border-radius: 10px;
+  width: 32px;
 }
 
 .navegation {
   display: flex;
-  flex-direction: row;
   height: 60px;
   align-items: center;
   border: 1px solid #cccccc;
-  background-color: #ebf0f6;
+  background-color: #000000;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   padding-left: 10px;
@@ -36,13 +59,19 @@ body {
 .navegation__faGit {
   padding: 20px;
   font-size: 50px;
+  color: #ffffff;
 }
 .navegation__search {
   width: 300px;
   height: 34px;
   font-size: 15px;
   padding-left: 12px;
-  color: #ebf0f6;
+  color: #EBF0F6;
+  background: none;
+  display: table-cell;
+  min-height: 26px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .navegation__menuMain {
   list-style: none;
@@ -51,6 +80,7 @@ body {
   list-style: none;
   margin: 10px;
   display: inline;
+  color: #ffffff;
 }
 
 .info {
@@ -66,9 +96,9 @@ body {
 }
 .info__button {
   width: 170px;
-  background: linear-gradient(#ffffff, #efefef);
+  background: linear-gradient(#ffffff, #EFEFEF);
   font-weight: 700;
-  color: #000;
+  color: #000000;
   padding: 10px;
 }
 .info__work {
@@ -98,7 +128,7 @@ body {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCCCCC;
 }
 .repo__container__language {
   padding-right: 20px;
